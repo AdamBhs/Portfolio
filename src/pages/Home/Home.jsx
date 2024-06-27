@@ -52,6 +52,8 @@ const Home = () => {
         clearInterval(interval);
       }
     }, 30); 
+
+   
   }, [totalCommits]);
 
   const handleDownloadCV = () => {
