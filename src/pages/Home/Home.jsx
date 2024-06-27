@@ -43,7 +43,7 @@ const Home = () => {
   }, [accessToken]);
 
   useEffect(() => {
-    const targetCommit = totalCommits;
+    const targetCommit = 72;
     let currentCommit = 0;
 
     const interval = setInterval(() => {
