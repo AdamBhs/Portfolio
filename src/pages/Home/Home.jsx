@@ -8,6 +8,9 @@ import CV from "../../assets/CV.pdf"
 
 const Home = () => {
   const [commit, setCommit] = useState(0);
+  const [experience, setExperience] = useState(0);
+  const [projects, setProjects] = useState(0);
+  const [technology, setTechnology] = useState(0);
   const [totalCommits, setTotalCommits] = useState(0);
   const accessToken  = import.meta.env.VITE_GITHUB_ACCESS_TOKEN;
   
@@ -19,13 +22,11 @@ const Home = () => {
           Accept: 'application/vnd.github.v3+json',
         };
 
-        // Fetch list of repositories
         const reposResponse = await axios.get('https://api.github.com/user/repos', { headers });
         const repos = reposResponse.data;
 
         let totalCount = 0;
 
-        // Iterate through repositories and count commits
         for (const repo of repos) {
           const commitsResponse = await axios.get(`https://api.github.com/repos/${repo.full_name}/commits`, { headers });
           const commits = commitsResponse.data;
@@ -44,6 +45,7 @@ const Home = () => {
   useEffect(() => {
     const targetCommit = totalCommits;
     let currentCommit = 0;
+
     const interval = setInterval(() => {
       if (currentCommit < targetCommit) {
         currentCommit++;
@@ -52,9 +54,42 @@ const Home = () => {
         clearInterval(interval);
       }
     }, 30); 
-
-   
   }, [totalCommits]);
+
+  useEffect(() => {
+    const targetExperience = 1;
+    const targetProjects = 2;
+    const targetTechnology = 3;
+
+    const interval = setInterval(() => {
+      setExperience((currentExperience) => {
+        if (currentExperience < targetExperience) {
+          return currentExperience + 1;
+        }
+        return currentExperience;
+      });
+
+      setProjects((currentProjects) => {
+        if (currentProjects < targetProjects) {
+          return currentProjects + 1;
+        }
+        return currentProjects;
+      });
+
+      setTechnology((currentTechnology) => {
+        if (currentTechnology < targetTechnology) {
+          return currentTechnology + 1;
+        }
+        return currentTechnology;
+      });
+
+      if (experience >= targetExperience && projects >= targetProjects && technology >= targetTechnology) {
+        clearInterval(interval);
+      }
+    }, 300);
+
+    return () => clearInterval(interval);
+  }, [experience, projects, technology]);
 
   const handleDownloadCV = () => {
     const downloadUrl = CV;
@@ -119,17 +154,17 @@ const Home = () => {
 
       <div className='status'>
         <div className='status_experience'>
-          <h1>1</h1>
+          <h1>{experience}</h1>
           <p>Years of <br/>experience</p>
         </div>
 
         <div className='status_project'>
-          <h1>2</h1>
+          <h1>{projects}</h1>
           <p>Projects <br/> completed</p>
         </div>
 
         <div className='status_technology'>
-          <h1>3</h1>
+          <h1>{technology}</h1>
           <p>Technologies <br /> mastered</p>
         </div>
 
