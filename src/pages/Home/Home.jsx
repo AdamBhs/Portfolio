@@ -9,7 +9,7 @@ import CV from "../../assets/CV.pdf"
 const Home = () => {
   const [commit, setCommit] = useState(0);
   const [totalCommits, setTotalCommits] = useState(0);
-  const accessToken  = process.env.REACT_APP_GITHUB_ACCESS_TOKEN;
+  const accessToken  = import.meta.env.VITE_GITHUB_ACCESS_TOKEN;
   
   useEffect(() => {
     const fetchCommitCount = async () => {
@@ -52,7 +52,7 @@ const Home = () => {
         clearInterval(interval);
       }
     }, 30); 
-  }, []);
+  }, [totalCommits]);
 
   const handleDownloadCV = () => {
     const downloadUrl = CV;
@@ -79,7 +79,6 @@ const Home = () => {
   const openGitHub = () => {
     const github = "https://github.com/AdamBhs";
     window.open(github, "_blank");
-    console.log(totalCommits)
   };
 
   const openFacebook = () => {
