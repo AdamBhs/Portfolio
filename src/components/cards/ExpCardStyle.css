@@ -1,0 +1,32 @@
+.card_resume {
+    padding: 20px 30px;
+    background-color: #28272c;
+    border-radius: 8px;
+}
+
+.card_resume .time {
+    margin: 0;
+    color: #51C4D3;
+}
+
+.card_resume .title {
+    margin-top: 6px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+.card_resume div {
+    display: flex;
+    align-items: center;
+    height: 44px;
+}
+
+.card_resume div p {
+    font-size: 16px;
+    margin-left: 4px;
+    color: #A3A3A6;
+}
+
+.card_resume .dot {
+    color: #51C4D3;
+}

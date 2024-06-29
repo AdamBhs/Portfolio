@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import "./NavbarStyle.css"
 
 const Navbar = () => {
-  const [activeLink, setActiveLink] = useState('/');
-
+  const [activeLink, setActiveLink] = useState("/");
+  
   const handleNavLinkClick = (to) => {
     setActiveLink(to);
   };
