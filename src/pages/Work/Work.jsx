@@ -6,6 +6,8 @@ import 'swiper/css';
 import project1 from "../../assets/work/thumb1.png";
 import project2 from "../../assets/work/thumb2.png";
 import project3 from "../../assets/work/thumb3.png";
+import { GoArrowRight } from 'react-icons/go';
+import { FaGithub } from 'react-icons/fa';
 
 export const Work = () => {
   const swiperRef = useRef(null);
@@ -27,6 +29,10 @@ export const Work = () => {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque consequat, faucibus et, et.</p>
           <p className='technology'>React.Js, CSS</p>
           <div className='line'></div>
+          <div className="ref-github">
+            <div className='ref'><GoArrowRight /></div>
+            <div className='github'><FaGithub /></div>
+          </div>
         </>
         }
         {project === "Project 2" &&
@@ -36,6 +42,10 @@ export const Work = () => {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque consequat, faucibus et, et.</p>
           <p className='technology'>React.Js, CSS</p>
           <div className='line'></div>
+          <div className="ref-github">
+            <div className='ref'><GoArrowRight /></div>
+            <div className='github'><FaGithub /></div>
+          </div>
         </>
         }
         {project === "Project 3" &&
@@ -45,6 +55,10 @@ export const Work = () => {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque consequat, faucibus et, et.</p>
           <p className='technology'>React.Js, CSS</p>
           <div className='line'></div>
+          <div className="ref-github">
+            <div className='ref'><GoArrowRight /></div>
+            <div className='github'><FaGithub /></div>
+          </div>
         </>
         }
         {project === "Project 4" &&
@@ -54,6 +68,10 @@ export const Work = () => {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque consequat, faucibus et, et.</p>
           <p className='technology'>React.Js, CSS</p>
           <div className='line'></div>
+          <div className="ref-github">
+            <div className='ref'><GoArrowRight /></div>
+            <div className='github'><FaGithub /></div>
+          </div>
         </>
         }
       </div>

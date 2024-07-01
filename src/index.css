@@ -19,4 +19,18 @@ body {
   padding-right: 260px;
 }
 
+/* Media Query for tablets and larger screens */
+@media (max-width: 1024px) {
+  body {
+    padding-left: 560px;
+    padding-right: 560px;
+  }
+}
 
+/* Media Query for small tablets and mobile devices */
+@media (max-width: 768px) {
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
