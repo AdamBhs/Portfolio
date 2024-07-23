@@ -131,12 +131,15 @@ nav .link.activeLink {
     .nav-normal {
         display: none;
     }
+    
     .nav.open > .link {
         font-size: 18px;
     }
+
     .btn_hire {
         border: 2px solid #484750;
     }
+    
     .nav.open {
         right: 0;
     }

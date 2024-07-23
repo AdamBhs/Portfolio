@@ -1,5 +1,7 @@
 .home-container {
     margin-top: 60px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Profil */
@@ -12,7 +14,7 @@
 .present {
     margin-top: 30px;
     user-select: none;
-    width: 500px;
+    max-width: 500px;
     color: #FFFDFD;
 }
 
@@ -104,7 +106,7 @@
     margin-top: 60px;
     user-select: none;
     display: flex;
-    gap: 160px;
+    gap: 180px;
     justify-content: center;
     align-items: center;
 }
