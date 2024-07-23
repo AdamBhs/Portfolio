@@ -45,7 +45,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 340px;
+    width: 324px;
     margin-top: 40px;
     font-size: 16px;
     font-weight: 400;
@@ -78,6 +78,10 @@
     font-weight: 800;
 }
 
+.social_icons {
+    display: flex;
+    gap: 16px;
+}
 .social_icon {
     width: 32px;
     height: 32px;
@@ -100,9 +104,9 @@
     margin-top: 60px;
     user-select: none;
     display: flex;
-    justify-content: space-between;
+    gap: 160px;
+    justify-content: center;
     align-items: center;
-    padding-right: 60px;
 }
 
 .status div {
@@ -136,7 +140,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 16px 16px 52px #FFFDFD, -16px -16px 52px #FFFDFD;
+    box-shadow: 12px 12px 39px #FFFDFD, -12px -12px 39px #FFFDFD;
 }
   
 .bg {
@@ -199,3 +203,192 @@
 }
 
 
+@media (max-width: 575.98px) {
+    .profil {
+        flex-direction: column;
+    }
+
+    .present {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        order: 2;
+    }
+
+    .present .present_social {
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .present .present_name {
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .present .present_specialty {
+        font-size: 14px;
+    }
+
+    .present p {
+        font-size: 12px;
+        width: 300px;
+    }
+
+    .card {
+        order: 1;
+        width: 300px;
+        height: 300px;
+        box-shadow: 8px 8px 26px #FFFDFD, -8px -8px 26px #FFFDFD;
+    }
+
+    .bg {
+        width: 290px;
+        height: 290px;
+    }
+
+    .bg img {
+        width: 290px;
+        height: 290px;
+    }
+    
+    .present_social {
+        margin-top: 20px;
+    }
+
+    .status {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 18px;
+    }
+
+    .status div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .profil {
+        flex-direction: column;
+    }
+
+    .present {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        order: 2;
+    }
+
+    .card {
+        order: 1;
+        width: 350px;
+        height: 350px;
+        box-shadow: 8px 8px 26px #FFFDFD, -8px -8px 26px #FFFDFD;
+    }
+
+    .bg {
+        width: 340px;
+        height: 340px;
+    }
+
+    .bg img {
+        width: 340px;
+        height: 340px;
+    }
+
+    .present .present_name {
+        text-align: center;
+        font-size: 44px;
+    }
+
+    .status {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .present_social {
+        margin-top: 20px;
+    }
+
+    .status div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .status {
+        gap: 11%;
+    }
+
+    .profil {
+        flex-direction: column;
+    }
+
+    .present {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        order: 2;
+    }
+
+    .card {
+        order: 1;
+        width: 350px;
+        height: 350px;
+        box-shadow: 8px 8px 26px #FFFDFD, -8px -8px 26px #FFFDFD;
+    }
+
+    .present .present_name {
+        font-size: 44px;
+    }
+
+    .bg {
+        width: 340px;
+        height: 340px;
+    }
+
+    .bg img {
+        width: 340px;
+        height: 340px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .status {
+        gap: 14%;
+    }
+
+    .card {
+        width: 350px;
+        height: 350px;
+        box-shadow: 8px 8px 26px #FFFDFD, -8px -8px 26px #FFFDFD;
+    }
+
+    .present .present_name {
+        font-size: 52px;
+    }
+
+    .bg {
+        width: 340px;
+        height: 340px;
+    }
+
+    .bg img {
+        width: 340px;
+        height: 340px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+}

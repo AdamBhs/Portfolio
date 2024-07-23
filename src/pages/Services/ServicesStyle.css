@@ -4,3 +4,29 @@
     gap: 40px;
     margin-top: 80px;
 }
+
+@media (max-width: 575.98px) {
+    .services-options {
+        margin-top: 68px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .services-options {
+        margin-top: 68px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+}

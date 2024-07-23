@@ -139,9 +139,11 @@ const Home = () => {
 
           <div className='present_social'>
             <div className='btn_cv' onClick={handleDownloadCV}>DOWNLOAD CV <HiArrowDownTray className='install_icon'/></div>
-            <div className='social_icon' onClick={openGitHub}> <FaGithub /> </div>
-            <div className='social_icon' onClick={openLinkedIn}> <FaLinkedinIn /> </div>
-            <div className='social_icon' onClick={openFacebook}> <FaFacebook /> </div>
+            <div className="social_icons">
+              <div className='social_icon' onClick={openGitHub}> <FaGithub /> </div>
+              <div className='social_icon' onClick={openLinkedIn}> <FaLinkedinIn /> </div>
+              <div className='social_icon' onClick={openFacebook}> <FaFacebook /> </div>
+            </div>
           </div>
         </div>
         

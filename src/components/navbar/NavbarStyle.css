@@ -1,3 +1,5 @@
+
+
 .nav-container {
     display: flex;
     align-items: center;
@@ -28,7 +30,6 @@ nav {
     display: flex;
     align-items: center;
     gap: 28px;
-
 }
 
 nav > .link {
@@ -72,37 +73,129 @@ nav .link.activeLink {
     color: #fffdfd;
 }
 
+.bars-menu {
+    display: none;
+}
 
-@media (max-width: 768px) {
-    body {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+.nav {
+    padding-top: 100px;
+    position: fixed;
+    right: -100%;
+    transition: all 0.5s;
+    background-color: #484750;
+    height: 100vh;
+    top: 0;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+}
 
-    .nav-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        width: 100%;
-    }
+.close-nav {
+    position: absolute;
+    top: 6%;
+    right: 9%;
+    width: 30px;
+    height: 30px;
+    color: #51C4D3;
+    cursor: pointer;
+}
 
-    .sit-logo span {
-        font-size: 28px;
-        margin-bottom: 0;
-    }
+.bars-menu {
+    color: #51C4D3;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
 
-    nav > .link {
-        width: 100%;
-        text-align: left;
+@media (max-width: 575.98px) {
+    .nav-normal {
+        display: none;
     }
 
     .btn_hire {
-        width: 100%;
+        border: 2px solid #484750;
+    }
+
+    .nav.open {
+        right: 0;
+    }
+
+    .bars-menu {
+        display: block;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .nav-normal {
+        display: none;
+    }
+    .nav.open > .link {
+        font-size: 18px;
+    }
+    .btn_hire {
+        border: 2px solid #484750;
+    }
+    .nav.open {
+        right: 0;
+    }
+    
+    .bars-menu {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .nav-normal {
+        display: none;
+    }
+
+    .nav.open > .link {
+        font-size: 20px;
+    }
+
+    .btn_hire {
+        display: flex;
+        align-items: center;
         justify-content: center;
+        width: 120px;
+        height: 52px;
+        font-size: 20px;
+        border: 2px solid #484750;
+    }
+
+    .nav.open {
+        right: 0;
+    }
+
+    .bars-menu {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .nav {
+        display: none;
+    }
+
+    .bars-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .nav {
+        display: none;
+    }
+
+    .bars-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 1400px) {
+    .nav {
+        display: none;
     }
 }
