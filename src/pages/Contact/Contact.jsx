@@ -33,7 +33,7 @@ export const Contact = () => {
     <div className='contact-container'>
       <div className='hire'>
         <h1>Let's work together</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         Nesciunt sit illo esse commodi.</p>
         <form ref={form} onSubmit={sendEmail}>
           <div className='inputs'>
