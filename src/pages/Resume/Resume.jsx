@@ -18,7 +18,7 @@ export const Resume = () => {
     <div className='resume-container'>
       <div className='options_resume'>
         <h1>Why hire me?</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>I possess valuable skills and professional knowledge in computer science.</p>
         <div className='btns_options'>
           <div  onClick={() => handleClick('experience')} className={`button ${activeSection === 'experience' ? 'active' : ''}`}>Experience</div>
           <div  onClick={() => handleClick('education')} className={`button ${activeSection === 'education' ? 'active' : ''}`}>Education</div>
@@ -30,14 +30,9 @@ export const Resume = () => {
           {activeSection === 'experience' && 
             <div className='content-container'>
               <h2>My experience</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque consequat, faucibus et, et.</p>
+              <p>I have worked on various projects using ReactJS, Angular, and Spring Boot, and have experience in both frontend and full-stack development.</p>
               <div className='experience_list'>
-                <ExpCard time="2022" title="Full Stack Developer Developer Developer" description="Tech solution Inc."/>
-                <ExpCard time="2022" title="Full Stack Developer" description="Tech solution Inc."/>
-                <ExpCard time="2022" title="Full Stack Developer" description="Tech solution Inc."/>
-                <ExpCard time="2022" title="Full Stack Developer" description="Tech solution Inc."/>
-                <ExpCard time="2022" title="Full Stack Developer" description="Tech solution Inc."/>
-                <ExpCard time="2022" title="Full Stack Developer" description="Tech solution Inc."/>
+                <ExpCard time="Fev 2024 - May 2024" title="Full Stack Developer" description="Educanet"/>
               </div>
             </div>
           }
@@ -45,14 +40,10 @@ export const Resume = () => {
           {activeSection === 'education' && 
             <div className='content-container'>
               <h2>My education</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque consequat, faucibus et, et.</p>
+              <p>My background in computer science from the Higher School of Science and Technology of Hammam Sousse.</p>
               <div className='experience_list'>
-                <ExpCard time="2022" title="Full Stack Developer Developer Developer" description="Tech solution Inc."/>
-                <ExpCard time="2022" title="Full Stack Developer" description="Tech solution Inc."/>
-                <ExpCard time="2022" title="Full Stack Developer" description="Tech solution Inc."/>
-                <ExpCard time="2022" title="Full Stack Developer" description="Tech solution Inc."/>
-                <ExpCard time="2022" title="Full Stack Developer" description="Tech solution Inc."/>
-                <ExpCard time="2022" title="Full Stack Developer" description="Tech solution Inc."/>
+                <ExpCard time="2021 - 2024" title="Computer Science Bachelor's Degree" description="Essths"/>
+                
               </div>
             </div>
           }
@@ -60,7 +51,7 @@ export const Resume = () => {
           {activeSection === 'skills' && 
             <div className='content-container'>
               <h2>My skills</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque consequat, faucibus et, et.</p>
+              <p>I have practical experience with various programming languages and frameworks, including JavaScript, Python, Java, React, and Spring Boot, enabling me to build robust and scalable applications.</p>
               <div className='skills_list'>
 
                 <div className='icon_container'>
@@ -133,7 +124,7 @@ export const Resume = () => {
           {activeSection === 'about' && 
              <div className='content-container'>
               <h2>About me</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque consequat, faucibus et, et.</p>
+              <p>Nouveau diplômé en génie logiciel, compétent en conception et développement d applications informatiques</p>
               <div className='personal_data'>
                 <div>Name <span>Adem Ben Hassine</span></div>
                 <div>Phone <span>(+216) 54 014 243</span></div>
