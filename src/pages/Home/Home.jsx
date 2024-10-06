@@ -1,4 +1,4 @@
-import {React, useState, useEffect} from 'react'
+import { useState, useEffect} from 'react'
 import "./HomeStyle.css"
 import photo from "../../assets/adem.png"
 import { HiArrowDownTray } from "react-icons/hi2";
@@ -147,9 +147,9 @@ const Home = () => {
           </div>
         </div>
         
-        <div class="card">
-          <div class="bg"><img src={photo} alt=""/></div>
-          <div class="blob"></div>
+        <div className="card">
+          <div className="bg"><img src={photo} alt=""/></div>
+          <div className="blob"></div>
         </div>
 
       </div>

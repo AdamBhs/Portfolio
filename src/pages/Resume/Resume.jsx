@@ -1,13 +1,11 @@
-import {React, useState} from 'react'
+import {useState} from 'react'
 import "./ResumeStyle.css"
-import { Button } from '../../components/button/Button'
 import { ExpCard } from '../../components/cards/ExpCard';
 import { SiJavascript, SiSpring, SiTypescript } from 'react-icons/si';
 import { FaAngular, FaFigma, FaJava, FaNodeJs, FaPython, FaReact } from 'react-icons/fa6';
 
 export const Resume = () => {
   const [activeSection, setActiveSection] = useState('experience');
-  const [activeOption, setActiveOption] = useState("experience");
 
   const handleClick = (section) => {
     setActiveSection(section);
@@ -124,7 +122,7 @@ export const Resume = () => {
           {activeSection === 'about' && 
              <div className='content-container'>
               <h2>About me</h2>
-              <p>Nouveau diplômé en génie logiciel, compétent en conception et développement d applications informatiques</p>
+              <p>Recent graduate in software engineering, skilled in designing and developing software applications.</p>
               <div className='personal_data'>
                 <div>Name <span>Adem Ben Hassine</span></div>
                 <div>Phone <span>(+216) 54 014 243</span></div>
