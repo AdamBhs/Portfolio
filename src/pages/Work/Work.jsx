@@ -6,6 +6,8 @@ import 'swiper/css';
 import project1 from "../../assets/work/quran_app.png";
 import project2 from "../../assets/work/shope_app.png";
 import project3 from "../../assets/work/Dashboard.png";
+import project4 from "../../assets/work/note.png";
+
 import { GoArrowRight } from 'react-icons/go';
 import { FaGithub } from 'react-icons/fa';
 
@@ -77,13 +79,17 @@ export const Work = () => {
         {project === "Project 4" &&
         <>
           <h1>04</h1>
-          <h3>Hello</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque consequat, faucibus et, et.</p>
-          <p className='technology'>React.Js, CSS</p>
+          <h3>Note App</h3>
+          <p>Building full stack app using ReactJs, Express and postegreSQL and implement Authentification on it.</p>
+          <p className='technology'>ReactJs, Express</p>
           <div className='line'></div>
           <div className="ref-github">
-            <div className='ref'><GoArrowRight /></div>
-            <div className='github'><FaGithub /></div>
+            <a href="https://github.com/AdamBhs/NoteApp" target="_blank" rel="noopener noreferrer" className='ref'>
+              <GoArrowRight />
+            </a>
+            <a href="https://github.com/AdamBhs/NoteApp" target="_blank" rel="noopener noreferrer" className='github'>
+              <FaGithub />
+            </a>
           </div>
         </>
         }
@@ -101,7 +107,7 @@ export const Work = () => {
           <SwiperSlide><img src={project1} alt="Project 1" /></SwiperSlide>
           <SwiperSlide><img src={project2} alt="Project 2" /></SwiperSlide>
           <SwiperSlide><img src={project3} alt="Project 3" /></SwiperSlide>
-          <SwiperSlide><img src={project1} alt="Project 4" /></SwiperSlide>
+          <SwiperSlide><img src={project4} alt="Project 4" /></SwiperSlide>
         </Swiper>
         <div className="navigation-buttons">
           <div className='btn' onClick={() => swiperRef.current.slidePrev()}>
