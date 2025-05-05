@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import project1 from "../../assets/work/quran_app.png";
 import project2 from "../../assets/work/shope_app.png";
-import project3 from "../../assets/work/thumb3.png";
+import project3 from "../../assets/work/Dashboard.png";
 import { GoArrowRight } from 'react-icons/go';
 import { FaGithub } from 'react-icons/fa';
 
@@ -60,13 +60,17 @@ export const Work = () => {
         {project === "Project 3" &&
         <>
           <h1>03</h1>
-          <h3>Hello</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque consequat, faucibus et, et.</p>
-          <p className='technology'>React.Js, CSS</p>
+          <h3>WorkFlow</h3>
+          <p>Building Dashboard using NextJs and shadcnui</p>
+          <p className='technology'>NextJs, Shadcnui</p>
           <div className='line'></div>
           <div className="ref-github">
-            <div className='ref'><GoArrowRight /></div>
-            <div className='github'><FaGithub /></div>
+            <a href="https://workflowfr.netlify.app/" target="_blank" rel="noopener noreferrer" className='ref'>
+              <GoArrowRight />
+            </a>
+            <a href="https://github.com/AdamBhs/WorkFlow" target="_blank" rel="noopener noreferrer" className='github'>
+              <FaGithub />
+            </a>
           </div>
         </>
         }
