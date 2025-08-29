@@ -1,0 +1,66 @@
+.service {
+    user-select: none;
+    border-bottom: 1px solid rgba(180, 180, 182, 0.5);
+}
+
+.arrow_num {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service p {
+    color: #A3A3A6;
+}
+
+.service .service_title {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+}
+
+.arrow_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 54px;
+    height: 54px;
+    background-color: #FFFDFD;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.arrow_container .arrow {
+    font-size: 26px;
+    transform: rotate(45deg);
+    color: #1C1B22;
+    font-weight: 200;
+    transition: all 0.3s ease;
+}
+
+.arrow_container:hover .arrow {
+    transform: rotate(0deg);
+}
+
+
+.service .serivce_num {
+    margin: 0;
+    font-size: 40px;
+    color: transparent; 
+    -webkit-text-stroke: 1px #FFFDFD;
+    transition: all 0.3s ease;
+}
+
+.service:hover .serivce_num {
+    -webkit-text-stroke: 1px #51C4D3;
+}
+
+.service:hover .arrow_container {
+    background-color: #51C4D3;
+}
+
+.service:hover .service_title {
+    color: #51C4D3;
+}

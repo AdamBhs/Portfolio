@@ -1,0 +1,20 @@
+.services-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 80px;
+}
+
+@media (max-width: 575.98px) {
+    .services-options {
+        margin-top: 68px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .services-options {
+        margin-top: 68px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

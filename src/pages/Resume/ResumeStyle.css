@@ -1,0 +1,316 @@
+.resume-container {
+    display: grid;
+    grid-template-columns: 36% 64%;
+    user-select: none;
+    margin-top: 60px;
+}
+
+.options_resume h1 {
+    letter-spacing: 2px;
+    margin-top: 6px;
+    word-spacing: 5px;
+    font-size: 34px;
+}
+
+.content-container h2 {
+    margin: 0;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    font-size: 28px;
+}
+
+.content-container p {
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    margin-top: 20px;
+    margin-bottom: 22px;
+    max-width: 640px;
+}
+
+.options_resume p {
+    margin-top: 28px;
+    letter-spacing: 1px;
+    color: #A3A3A6;
+    font-size: 16px;
+    line-height: 1.7;
+    word-spacing: 3px;
+    max-width: 240px;
+}
+
+.btns_options {
+    margin-top: 32px;
+}
+/* Button */
+
+.button {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #28272c;
+    border-radius: 8px;
+    user-select: none;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #51C4D3;
+    color: #1C1B22;
+    font-weight: 500;
+}
+
+.button.active{
+    background-color: #51C4D3;
+    color: #1C1B22;
+    font-weight: 500;
+}
+
+/* Experience Style */
+.content-container p {
+    color: #A3A3A6;
+}
+
+.content-container .experience_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-height: 370px;
+    overflow-y: auto;
+}
+
+.content-container .skills_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    max-height: 370px;
+    overflow-y: auto;
+}
+
+.content-container .skills_list .icon_skill {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    background-color: #28272c;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content-container .skills_list .icon_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 142px;
+    height: 164px;
+}
+
+.content-container .skill_name {
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFDFD;
+    color: #1C1B22;
+    width: 90px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    height: 32px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    transition: opacity 0.3s ease;
+}
+
+.content-container .skills_list .icon_skill .icon {
+    transition: all 0.3s ease;
+    font-size: 44px;
+}
+
+.content-container .skills_list .icon_skill:hover .icon {
+    color: #51C4D3;
+}
+
+.content-container .skills_list .icon_container:hover .skill_name  {
+    opacity: 1;
+}
+
+.content-container .personal_data {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    color: #A3A3A6;
+}
+
+.content-container .personal_data div {
+    width: 240px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.content-container .personal_data span {
+    font-size: 18px;
+    margin-left: 13px;
+    color: #FFFDFD;
+    letter-spacing: 1px;
+}
+
+
+@media (max-width: 575.98px) {
+    .resume-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btns_options {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .options_resume {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .options_resume p {
+        text-align: center;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content-container p {
+        text-align: center;
+    }
+    
+    .content-container .experience_list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .content-container .skills_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content-container .personal_data {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .content-container .personal_data span {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .resume-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btns_options {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .options_resume {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .options_resume p {
+        text-align: center;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content-container p {
+        text-align: center;
+        max-width: 500px;
+    }
+
+    .content-container .skills_list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .content-container .personal_data span {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .resume-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btns_options {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .options_resume {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .options_resume p {
+        text-align: center;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content-container p {
+        text-align: center;
+        max-width: 500px;
+    }
+
+    .content-container .skills_list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .content-container .personal_data span {
+        font-size: 16px;
+    }
+}

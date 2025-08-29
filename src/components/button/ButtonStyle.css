@@ -1,0 +1,30 @@
+.button {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #28272c;
+    border-radius: 8px;
+    user-select: none;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #51C4D3;
+    color: #1C1B22;
+    font-weight: 500;
+}
+
+.button.active{
+    background-color: #51C4D3;
+    color: #1C1B22;
+    font-weight: 500;
+}
