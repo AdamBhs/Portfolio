@@ -21,7 +21,7 @@ export const Work = () => {
     "Project 3",
     "Project 4",
   ];
-  const [project, setProject] = useState("Project 1");
+  const [project, setProject] = useState("Project 0");
 
   const handleSlideChange = (swiper) => {
     console.log(
